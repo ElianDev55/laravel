@@ -1,9 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>{{ $survey->title }}</h1>
-
-          
+    <h1>{{ $surveys->title }}</h1>
+        
     @role('admin')
                 <h1>
                     Admin Dashboard

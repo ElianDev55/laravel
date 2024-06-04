@@ -9,8 +9,8 @@ class SurveyController extends Controller
 {
     public function index()
     {
-        $surveys = Survey::all();
-        return view('surveys.index', compact('surveys'));
+        $surveys = Survey::first();
+        return view('surveys.show', compact('surveys'));
     }
 
     public function create()
